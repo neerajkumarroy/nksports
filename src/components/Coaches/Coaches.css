@@ -1,0 +1,1409 @@
+/* =========================================================
+   NKSports - Coaches Section
+   Full Width + Fully Responsive
+   Font: Poppins
+   Theme: Orange / White
+========================================================= */
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+.coaches-section,
+.coaches-section * {
+  box-sizing: border-box;
+}
+
+.coaches-section {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 90px 0 100px;
+
+  background: #ffffff;
+  color: #111111;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   FULL WIDTH CONTAINER
+========================================================= */
+
+.coaches-container {
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
+
+  padding-left: clamp(16px, 4vw, 60px);
+  padding-right: clamp(16px, 4vw, 60px);
+}
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.coaches-heading {
+  width: 100%;
+  max-width: 700px;
+
+  margin: 0 auto 50px;
+
+  text-align: center;
+}
+
+/* Small Label */
+
+.coaches-label {
+  display: inline-block;
+
+  margin-bottom: 13px;
+
+  color: #ff5b08;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+/* Main Heading */
+
+.coaches-heading h2 {
+  margin: 0;
+
+  color: #111111;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: clamp(38px, 4.2vw, 64px);
+
+  font-weight: 700;
+
+  line-height: 1.08;
+
+  letter-spacing: -2.5px;
+}
+
+/* Orange Text */
+
+.coaches-heading h2 span {
+  color: #ff5b08;
+}
+
+/* Description */
+
+.coaches-heading p {
+  width: 100%;
+  max-width: 560px;
+
+  margin: 20px auto 0;
+
+  color: #666666;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   SLIDER WRAPPER
+========================================================= */
+
+.coaches-slider-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  padding: 0;
+}
+
+/* =========================================================
+   COACH SLIDER
+========================================================= */
+
+.coaches-slider {
+  width: 100%;
+
+  display: grid;
+
+  grid-auto-flow: column;
+
+  /*
+    Desktop:
+    4 cards visible
+  */
+
+  grid-auto-columns: calc((100% - 54px) / 4);
+
+  gap: 18px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  padding: 8px 3px 25px;
+
+  scroll-behavior: smooth;
+
+  scroll-snap-type: x mandatory;
+
+  scrollbar-width: none;
+
+  -ms-overflow-style: none;
+}
+
+.coaches-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* =========================================================
+   COACH CARD
+========================================================= */
+
+.coach-card {
+  width: 100%;
+  min-width: 0;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 16px;
+
+  scroll-snap-align: start;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Card Hover */
+
+.coach-card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(255, 91, 8, 0.25);
+
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================================
+   COACH IMAGE
+========================================================= */
+
+.coach-image-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 0.82 / 1;
+
+  overflow: hidden;
+
+  background: #f4f4f4;
+}
+
+.coach-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center top;
+
+  transition: transform 0.4s ease;
+}
+
+.coach-card:hover .coach-image {
+  transform: scale(1.04);
+}
+
+/* =========================================================
+   COACH INFO
+========================================================= */
+
+.coach-info {
+  width: 100%;
+
+  padding: 17px 15px 19px;
+
+  text-align: center;
+
+  background: #ffffff;
+}
+
+.coach-info h3 {
+  margin: 0;
+
+  color: #111111;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  line-height: 1.3;
+
+  letter-spacing: -0.2px;
+}
+
+.coach-info p {
+  margin: 5px 0 0;
+
+  color: #777777;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 400;
+
+  line-height: 1.4;
+}
+
+/* =========================================================
+   SLIDER BUTTONS
+========================================================= */
+
+.coach-slider-btn {
+  position: absolute;
+
+  top: 43%;
+
+  z-index: 20;
+
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #ff5b08;
+
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 19px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  box-shadow: 0 7px 20px rgba(255, 91, 8, 0.25);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.coach-slider-btn:hover {
+  background: #e94f00;
+
+  transform: scale(1.08);
+}
+
+.coach-prev {
+  left: -22px;
+}
+
+.coach-next {
+  right: -22px;
+}
+
+/* =========================================================
+   READY TO ELEVATE
+========================================================= */
+
+.elevate-section {
+  position: relative;
+
+  width: 100%;
+  max-width: 100%;
+
+  min-height: 320px;
+
+  margin-top: 70px;
+
+  padding: 50px clamp(20px, 5vw, 70px);
+
+  display: flex;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background-repeat: no-repeat;
+
+  background-position: center center;
+
+  background-size: cover;
+}
+
+/*
+   NO OVERLAY
+   No ::before
+   No ::after
+   No gradient
+*/
+
+/* =========================================================
+   ELEVATE CONTENT
+========================================================= */
+
+.elevate-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  max-width: 520px;
+}
+
+/* Label */
+
+.elevate-label {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: rgba(255, 255, 255, 0.92);
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+/* Heading */
+
+.elevate-content h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: clamp(32px, 3.5vw, 50px);
+
+  font-weight: 700;
+
+  line-height: 1.08;
+
+  letter-spacing: -1.8px;
+}
+
+.elevate-content h2 span {
+  color: #ffffff;
+}
+
+/* Description */
+
+.elevate-content p {
+  width: 100%;
+
+  max-width: 430px;
+
+  margin: 17px 0 0;
+
+  color: rgba(255, 255, 255, 0.92);
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  line-height: 1.65;
+}
+
+/* =========================================================
+   ELEVATE BUTTON
+========================================================= */
+
+.elevate-button {
+  min-height: 42px;
+
+  margin-top: 22px;
+
+  padding: 0 20px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  border: none;
+
+  border-radius: 30px;
+
+  background: #ff5b08;
+
+  color: #ffffff;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.elevate-button span {
+  font-size: 16px;
+
+  line-height: 1;
+
+  transition: transform 0.25s ease;
+}
+
+.elevate-button:hover {
+  background: #e94f00;
+
+  transform: translateY(-2px);
+}
+
+.elevate-button:hover span {
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   LARGE DESKTOP - 1600px+
+========================================================= */
+
+@media (min-width: 1600px) {
+  .coaches-section {
+    padding: 0px 0 120px;
+  }
+
+  .coaches-container {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .coaches-heading {
+    margin-bottom: 60px;
+  }
+
+  .coaches-heading h2 {
+    font-size: 68px;
+
+    letter-spacing: -3px;
+  }
+
+  .coaches-heading p {
+    font-size: 17px;
+  }
+
+  .coaches-slider {
+    grid-auto-columns: calc((100% - 66px) / 4);
+
+    gap: 22px;
+  }
+
+  .coach-info {
+    padding: 21px 18px 23px;
+  }
+
+  .coach-info h3 {
+    font-size: 19px;
+  }
+
+  .coach-info p {
+    font-size: 12px;
+  }
+
+  .elevate-section {
+    min-height: 350px;
+
+    margin-top: 85px;
+
+    padding: 60px 70px;
+
+    border-radius: 22px;
+    padding: 80px;
+  }
+
+  .elevate-content {
+    max-width: 580px;
+  }
+
+  .elevate-content h2 {
+    font-size: 54px;
+  }
+
+  .elevate-content p {
+    font-size: 14px;
+  }
+}
+
+/* =========================================================
+   1200px - 1599px
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .coaches-section {
+    padding: 0px 0 100px;
+  }
+
+  .coaches-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .coaches-heading {
+    margin-bottom: 48px;
+  }
+
+  .coaches-heading h2 {
+    font-size: 54px;
+  }
+
+  .coaches-heading p {
+    font-size: 14px;
+  }
+
+  .coaches-slider {
+    grid-auto-columns: calc((100% - 45px) / 4);
+
+    gap: 15px;
+  }
+
+  .coach-image-wrapper {
+    aspect-ratio: 0.8 / 1;
+  }
+
+  .coach-info {
+    padding: 15px 12px 17px;
+  }
+
+  .coach-info h3 {
+    font-size: 15px;
+  }
+
+  .coach-info p {
+    font-size: 10px;
+  }
+
+  .coach-slider-btn {
+    width: 40px;
+    height: 40px;
+
+    font-size: 17px;
+  }
+
+  .coach-prev {
+    left: -20px;
+  }
+
+  .coach-next {
+    right: -20px;
+  }
+
+  .elevate-section {
+    min-height: 300px;
+
+    margin-top: 65px;
+
+    padding: 75px;
+
+    border-radius: 18px;
+  }
+
+  .elevate-content h2 {
+    font-size: 43px;
+  }
+}
+
+/* =========================================================
+   1024px - 1199px
+========================================================= */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .coaches-section {
+    padding: 0px 0 90px;
+  }
+
+  .coaches-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .coaches-heading {
+    margin-bottom: 42px;
+  }
+
+  .coaches-heading h2 {
+    font-size: 46px;
+  }
+
+  .coaches-heading p {
+    font-size: 13px;
+  }
+
+  .coaches-slider {
+    grid-auto-columns: calc((100% - 45px) / 4);
+
+    gap: 15px;
+  }
+
+  .coach-info {
+    padding: 14px 9px 16px;
+  }
+
+  .coach-info h3 {
+    font-size: 13px;
+  }
+
+  .coach-info p {
+    font-size: 9px;
+  }
+
+  .coach-slider-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .coach-prev {
+    left: -19px;
+  }
+
+  .coach-next {
+    right: -19px;
+  }
+
+  .elevate-section {
+    min-height: 275px;
+
+    margin-top: 55px;
+
+    padding: 40px;
+
+    border-radius: 16px;
+  }
+
+  .elevate-content h2 {
+    font-size: 38px;
+  }
+
+  .elevate-content p {
+    font-size: 11px;
+  }
+}
+
+/* =========================================================
+   TABLET - 768px to 1023px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .coaches-section {
+    padding: 75px 0 85px;
+  }
+
+  .coaches-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .coaches-heading {
+    margin-bottom: 40px;
+  }
+
+  .coaches-label {
+    font-size: 11px;
+  }
+
+  .coaches-heading h2 {
+    font-size: 43px;
+
+    letter-spacing: -1.7px;
+  }
+
+  .coaches-heading p {
+    font-size: 13px;
+  }
+
+  /*
+     Tablet = 3 cards
+  */
+
+  .coaches-slider {
+    grid-auto-columns: calc((100% - 30px) / 3);
+
+    gap: 15px;
+  }
+
+  .coach-image-wrapper {
+    aspect-ratio: 0.8 / 1;
+  }
+
+  .coach-info {
+    padding: 14px 10px 16px;
+  }
+
+  .coach-info h3 {
+    font-size: 14px;
+  }
+
+  .coach-info p {
+    font-size: 9px;
+  }
+
+  .coach-slider-btn {
+    width: 37px;
+    height: 37px;
+
+    font-size: 16px;
+  }
+
+  .coach-prev {
+    left: -18px;
+  }
+
+  .coach-next {
+    right: -18px;
+  }
+
+  .elevate-section {
+    min-height: 270px;
+
+    margin-top: 55px;
+
+    padding: 38px 35px;
+
+    border-radius: 16px;
+
+    background-position: center;
+  }
+
+  .elevate-content {
+    max-width: 400px;
+  }
+
+  .elevate-content h2 {
+    font-size: 35px;
+  }
+
+  .elevate-content p {
+    font-size: 10px;
+
+    max-width: 350px;
+  }
+}
+
+/* =========================================================
+   SMALL TABLET - 576px to 767px
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .coaches-section {
+    padding: 65px 0 75px;
+  }
+
+  .coaches-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .coaches-heading {
+    margin-bottom: 35px;
+  }
+
+  .coaches-label {
+    font-size: 10px;
+
+    letter-spacing: 1.7px;
+  }
+
+  .coaches-heading h2 {
+    font-size: 42px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .coaches-heading p {
+    margin-top: 17px;
+
+    font-size: 12px;
+  }
+
+  /*
+     Mobile / Small Tablet = 2 cards
+  */
+
+  .coaches-slider {
+    grid-auto-columns: calc((100% - 14px) / 2);
+
+    gap: 14px;
+  }
+
+  .coach-card {
+    border-radius: 13px;
+  }
+
+  .coach-image-wrapper {
+    aspect-ratio: 0.78 / 1;
+  }
+
+  .coach-info {
+    padding: 13px 9px 15px;
+  }
+
+  .coach-info h3 {
+    font-size: 13px;
+  }
+
+  .coach-info p {
+    font-size: 9px;
+  }
+
+  .coach-slider-btn {
+    width: 35px;
+    height: 35px;
+
+    font-size: 15px;
+  }
+
+  .coach-prev {
+    left: -17px;
+  }
+
+  .coach-next {
+    right: -17px;
+  }
+
+  .elevate-section {
+    min-height: 250px;
+
+    margin-top: 45px;
+
+    padding: 30px 25px;
+
+    border-radius: 14px;
+
+    background-position: center center;
+  }
+
+  .elevate-content {
+    max-width: 330px;
+  }
+
+  .elevate-content h2 {
+    font-size: 30px;
+
+    letter-spacing: -1px;
+  }
+
+  .elevate-content p {
+    max-width: 300px;
+
+    font-size: 10px;
+  }
+
+  .elevate-button {
+    min-height: 37px;
+
+    padding: 0 15px;
+
+    font-size: 10px;
+  }
+}
+
+/* =========================================================
+   MOBILE - 400px to 575px
+========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+  .coaches-section {
+    padding: 55px 0 65px;
+  }
+
+  .coaches-container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .coaches-heading {
+    margin-bottom: 30px;
+  }
+
+  .coaches-label {
+    margin-bottom: 11px;
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .coaches-heading h2 {
+    font-size: 37px;
+
+    letter-spacing: -1.2px;
+  }
+
+  .coaches-heading p {
+    margin-top: 15px;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+  }
+
+  /*
+     2 cards visible
+  */
+
+  .coaches-slider {
+    grid-auto-columns: calc((100% - 10px) / 2);
+
+    gap: 10px;
+
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .coach-card {
+    border-radius: 11px;
+  }
+
+  .coach-image-wrapper {
+    aspect-ratio: 0.76 / 1;
+  }
+
+  .coach-image {
+    object-position: center top;
+  }
+
+  .coach-info {
+    padding: 11px 6px 13px;
+  }
+
+  .coach-info h3 {
+    font-size: 11px;
+  }
+
+  .coach-info p {
+    margin-top: 4px;
+
+    font-size: 8px;
+  }
+
+  .coach-slider-btn {
+    width: 32px;
+    height: 32px;
+
+    font-size: 14px;
+  }
+
+  .coach-prev {
+    left: -15px;
+  }
+
+  .coach-next {
+    right: -15px;
+  }
+
+  /* Elevate */
+
+  .elevate-section {
+    min-height: 225px;
+
+    margin-top: 38px;
+
+    padding: 25px 20px;
+
+    border-radius: 12px;
+
+    background-position: center center;
+
+    background-size: cover;
+  }
+
+  .elevate-content {
+    max-width: 270px;
+  }
+
+  .elevate-label {
+    margin-bottom: 8px;
+
+    font-size: 8px;
+
+    letter-spacing: 1.3px;
+  }
+
+  .elevate-content h2 {
+    font-size: 26px;
+
+    line-height: 1.08;
+
+    letter-spacing: -0.8px;
+  }
+
+  .elevate-content p {
+    max-width: 255px;
+
+    margin-top: 10px;
+
+    font-size: 8.5px;
+
+    line-height: 1.55;
+  }
+
+  .elevate-button {
+    min-height: 33px;
+
+    margin-top: 13px;
+
+    padding: 0 12px;
+
+    font-size: 8px;
+  }
+
+  .elevate-button span {
+    font-size: 12px;
+  }
+}
+
+/* =========================================================
+   MOBILE - 350px to 399px
+========================================================= */
+
+@media (min-width: 350px) and (max-width: 399px) {
+  .coaches-section {
+    padding: 50px 0 58px;
+  }
+
+  .coaches-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .coaches-heading {
+    margin-bottom: 27px;
+  }
+
+  .coaches-label {
+    font-size: 8px;
+
+    letter-spacing: 1.2px;
+  }
+
+  .coaches-heading h2 {
+    font-size: 33px;
+
+    letter-spacing: -1px;
+  }
+
+  .coaches-heading p {
+    margin-top: 13px;
+
+    font-size: 10px;
+  }
+
+  .coaches-slider {
+    grid-auto-columns: calc((100% - 8px) / 2);
+
+    gap: 8px;
+  }
+
+  .coach-card {
+    border-radius: 10px;
+  }
+
+  .coach-image-wrapper {
+    aspect-ratio: 0.74 / 1;
+  }
+
+  .coach-info {
+    padding: 9px 5px 11px;
+  }
+
+  .coach-info h3 {
+    font-size: 10px;
+  }
+
+  .coach-info p {
+    font-size: 7.5px;
+  }
+
+  .coach-slider-btn {
+    width: 30px;
+    height: 30px;
+
+    font-size: 13px;
+  }
+
+  .coach-prev {
+    left: -14px;
+  }
+
+  .coach-next {
+    right: -14px;
+  }
+
+  /* Elevate */
+
+  .elevate-section {
+    min-height: 205px;
+
+    margin-top: 33px;
+
+    padding: 22px 17px;
+
+    border-radius: 10px;
+
+    background-position: center center;
+  }
+
+  .elevate-content {
+    max-width: 235px;
+  }
+
+  .elevate-label {
+    font-size: 7px;
+  }
+
+  .elevate-content h2 {
+    font-size: 23px;
+
+    letter-spacing: -0.6px;
+  }
+
+  .elevate-content p {
+    max-width: 220px;
+
+    margin-top: 8px;
+
+    font-size: 7.5px;
+  }
+
+  .elevate-button {
+    min-height: 30px;
+
+    margin-top: 10px;
+
+    padding: 0 10px;
+
+    font-size: 7px;
+  }
+}
+
+/* =========================================================
+   VERY SMALL MOBILE - BELOW 350px
+========================================================= */
+
+@media (max-width: 349px) {
+  .coaches-section {
+    padding: 45px 0 50px;
+  }
+
+  .coaches-container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .coaches-heading {
+    margin-bottom: 25px;
+  }
+
+  .coaches-label {
+    font-size: 7px;
+
+    letter-spacing: 1px;
+  }
+
+  .coaches-heading h2 {
+    font-size: 29px;
+
+    letter-spacing: -0.8px;
+  }
+
+  .coaches-heading p {
+    margin-top: 12px;
+
+    font-size: 9px;
+  }
+
+  .coaches-slider {
+    grid-auto-columns: calc((100% - 7px) / 2);
+
+    gap: 7px;
+  }
+
+  .coach-image-wrapper {
+    aspect-ratio: 0.72 / 1;
+  }
+
+  .coach-info {
+    padding: 8px 4px 10px;
+  }
+
+  .coach-info h3 {
+    font-size: 9px;
+  }
+
+  .coach-info p {
+    font-size: 7px;
+  }
+
+  .coach-slider-btn {
+    width: 27px;
+    height: 27px;
+
+    font-size: 12px;
+  }
+
+  .coach-prev {
+    left: -12px;
+  }
+
+  .coach-next {
+    right: -12px;
+  }
+
+  /* Elevate */
+
+  .elevate-section {
+    min-height: 190px;
+
+    margin-top: 29px;
+
+    padding: 20px 14px;
+
+    border-radius: 9px;
+
+    background-position: center center;
+  }
+
+  .elevate-content {
+    max-width: 205px;
+  }
+
+  .elevate-content h2 {
+    font-size: 20px;
+
+    letter-spacing: -0.5px;
+  }
+
+  .elevate-content p {
+    max-width: 190px;
+
+    margin-top: 7px;
+
+    font-size: 7px;
+  }
+
+  .elevate-button {
+    min-height: 28px;
+
+    margin-top: 9px;
+
+    padding: 0 9px;
+
+    font-size: 6.5px;
+  }
+
+  .elevate-button span {
+    font-size: 10px;
+  }
+}
+
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+@media (hover: none) and (pointer: coarse) {
+  .coach-card:hover {
+    transform: none;
+
+    border-color: #eeeeee;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  }
+
+  .coach-card:hover .coach-image {
+    transform: none;
+  }
+
+  .coach-slider-btn:hover {
+    transform: none;
+
+    background: #ff5b08;
+  }
+
+  .elevate-button:hover {
+    transform: none;
+
+    background: #ff5b08;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .coaches-slider {
+    scroll-behavior: auto;
+
+    scroll-snap-type: none;
+  }
+
+  .coach-card,
+  .coach-image,
+  .coach-slider-btn,
+  .elevate-button,
+  .elevate-button span {
+    transition: none;
+  }
+}

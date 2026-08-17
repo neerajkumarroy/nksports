@@ -1,0 +1,643 @@
+/* =========================================================
+   NKSPORTS MODERN NAVBAR
+   Transparent + Fixed + Responsive
+========================================================= */
+
+.nks-navbar,
+.nks-navbar * {
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.nks-navbar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  z-index: 9999;
+
+  padding: 22px 4.5%;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* =========================================================
+   NAVBAR CONTAINER
+========================================================= */
+
+.nks-navbar-container {
+  width: 100%;
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.nks-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  flex-shrink: 0;
+
+  text-decoration: none;
+
+  color: #111;
+
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+/* =========================================================
+   LOGO ICON
+========================================================= */
+
+.nks-logo-icon {
+  position: relative;
+
+  width: 45px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #ff5b08;
+
+  border-radius: 10px 3px 10px 3px;
+
+  transform: skew(-7deg);
+
+  overflow: hidden;
+
+  box-shadow: 0 7px 20px rgba(255, 91, 8, 0.18);
+}
+
+.nks-logo-icon span {
+  color: #ffffff;
+
+  font-size: 25px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  transform: skew(7deg);
+}
+
+/* =========================================================
+   LOGO TEXT
+========================================================= */
+
+.nks-logo-text {
+  color: #111111;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: -1.3px;
+}
+
+.nks-logo-text span {
+  color: #ff5b08;
+}
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.nks-nav {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 34px;
+}
+
+.nks-nav > a {
+  position: relative;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #111111;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* =========================================================
+   NAV HOVER LINE
+========================================================= */
+
+.nks-nav > a:not(.nks-book-btn)::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -7px;
+
+  width: 0;
+
+  height: 2px;
+
+  background: #ff5b08;
+
+  border-radius: 10px;
+
+  transition: width 0.25s ease;
+}
+
+.nks-nav > a:not(.nks-book-btn):hover {
+  color: #ff5b08;
+
+  transform: translateY(-1px);
+}
+
+.nks-nav > a:not(.nks-book-btn):hover::after {
+  width: 100%;
+}
+
+/* =========================================================
+   BOOK A COURT BUTTON
+========================================================= */
+
+.nks-book-btn {
+  min-width: 155px;
+
+  height: 48px;
+
+  padding: 0 22px;
+
+  gap: 9px;
+
+  border-radius: 30px;
+
+  background: #ff5b08;
+
+  color: #ffffff !important;
+
+  font-size: 14px !important;
+
+  font-weight: 600 !important;
+
+  box-shadow: 0 8px 22px rgba(255, 91, 8, 0.18);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease !important;
+}
+
+.nks-book-btn span {
+  font-size: 18px;
+
+  line-height: 1;
+
+  transition: transform 0.3s ease;
+}
+
+.nks-book-btn:hover {
+  background: #e94f00;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 13px 28px rgba(255, 91, 8, 0.28);
+}
+
+.nks-book-btn:hover span {
+  transform: translate(2px, -2px);
+}
+
+.nks-book-btn::after {
+  display: none !important;
+}
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.nks-menu-btn {
+  display: none;
+
+  width: 44px;
+  height: 44px;
+
+  padding: 0;
+
+  border: none;
+
+  background: rgba(255, 255, 255, 0.5);
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 5px;
+
+  z-index: 10001;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.nks-menu-btn span {
+  display: block;
+
+  width: 23px;
+  height: 2.5px;
+
+  background: #111111;
+
+  border-radius: 10px;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* =========================================================
+   MOBILE ACTIVE X
+========================================================= */
+
+.nks-menu-active span:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+
+.nks-menu-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nks-menu-active span:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1600px) {
+  .nks-navbar {
+    padding: 26px 5%;
+  }
+
+  .nks-logo-text {
+    font-size: 31px;
+  }
+
+  .nks-logo-icon {
+    width: 48px;
+    height: 44px;
+  }
+
+  .nks-logo-icon span {
+    font-size: 27px;
+  }
+
+  .nks-nav {
+    gap: 42px;
+  }
+
+  .nks-nav > a {
+    font-size: 16px;
+  }
+
+  .nks-book-btn {
+    min-width: 170px;
+
+    height: 52px;
+
+    font-size: 15px !important;
+  }
+}
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+  .nks-navbar {
+    padding: 20px 4%;
+  }
+
+  .nks-nav {
+    gap: 23px;
+  }
+
+  .nks-nav > a {
+    font-size: 13px;
+  }
+
+  .nks-book-btn {
+    min-width: 140px;
+
+    height: 45px;
+
+    padding: 0 18px;
+
+    font-size: 13px !important;
+  }
+
+  .nks-logo-text {
+    font-size: 26px;
+  }
+
+  .nks-logo-icon {
+    width: 42px;
+    height: 40px;
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .nks-nav {
+    gap: 16px;
+  }
+
+  .nks-nav > a {
+    font-size: 12px;
+  }
+
+  .nks-book-btn {
+    min-width: 125px;
+
+    height: 43px;
+
+    padding: 0 13px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .nks-navbar {
+    padding: 15px 20px;
+
+    background: rgba(255, 255, 255, 0.22);
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .nks-navbar-container {
+    width: 100%;
+  }
+
+  /* Logo */
+
+  .nks-logo {
+    gap: 8px;
+  }
+
+  .nks-logo-icon {
+    width: 37px;
+    height: 35px;
+
+    border-radius: 9px 3px 9px 3px;
+  }
+
+  .nks-logo-icon span {
+    font-size: 21px;
+  }
+
+  .nks-logo-text {
+    font-size: 23px;
+
+    letter-spacing: -1px;
+  }
+
+  /* Mobile button */
+
+  .nks-menu-btn {
+    display: flex;
+  }
+
+  /* =====================================================
+     MOBILE DRAWER
+  ===================================================== */
+
+  .nks-nav {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+
+    width: min(320px, 85vw);
+
+    height: 100dvh;
+
+    margin: 0;
+
+    padding: 100px 28px 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    justify-content: flex-start;
+
+    gap: 0;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    box-shadow: -15px 0 50px rgba(0, 0, 0, 0.14);
+
+    transform: translateX(100%);
+
+    visibility: hidden;
+
+    transition:
+      transform 0.35s ease,
+      visibility 0.35s ease;
+
+    overflow-y: auto;
+
+    z-index: 10000;
+  }
+
+  .nks-nav-open {
+    transform: translateX(0);
+
+    visibility: visible;
+  }
+
+  /* Mobile links */
+
+  .nks-nav > a {
+    width: 100%;
+
+    min-height: 54px;
+
+    justify-content: flex-start;
+
+    padding: 0 5px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+
+    font-size: 15px;
+
+    font-weight: 500;
+  }
+
+  .nks-nav > a:not(.nks-book-btn)::after {
+    display: none;
+  }
+
+  .nks-nav > a:not(.nks-book-btn):hover {
+    transform: none;
+  }
+
+  /* Mobile Book button */
+
+  .nks-nav .nks-book-btn {
+    width: 100%;
+
+    min-height: 52px;
+
+    margin-top: 22px;
+
+    justify-content: center;
+
+    border: none;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .nks-navbar {
+    padding: 13px 15px;
+  }
+
+  .nks-logo-icon {
+    width: 34px;
+    height: 32px;
+  }
+
+  .nks-logo-icon span {
+    font-size: 19px;
+  }
+
+  .nks-logo-text {
+    font-size: 21px;
+  }
+
+  .nks-menu-btn {
+    width: 41px;
+    height: 41px;
+  }
+
+  .nks-nav {
+    width: min(290px, 88vw);
+
+    padding: 90px 22px 25px;
+  }
+}
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+  .nks-navbar {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .nks-logo-text {
+    font-size: 19px;
+  }
+
+  .nks-logo-icon {
+    width: 31px;
+    height: 30px;
+  }
+
+  .nks-menu-btn {
+    width: 39px;
+    height: 39px;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .nks-navbar,
+  .nks-nav,
+  .nks-nav > a,
+  .nks-book-btn,
+  .nks-menu-btn span {
+    transition: none;
+  }
+}

@@ -1,0 +1,1292 @@
+/* =========================================================
+   NKSports - PROGRAMS SECTION
+   FULL WIDTH
+   Responsive for all screen sizes
+   Font: Poppins
+   Theme: Orange + White
+========================================================= */
+
+.programs-section,
+.programs-section * {
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.programs-section {
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
+  padding: 110px 0;
+
+  background: #ffffff;
+
+  color: #111111;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   MAIN CONTAINER
+   FULL WIDTH
+========================================================= */
+
+.programs-container {
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
+
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.programs-heading {
+  width: 100%;
+  max-width: 650px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.programs-label {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  color: #ff5b08;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.programs-heading h2 {
+  margin: 0;
+
+  color: #111111;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: clamp(45px, 4.4vw, 68px);
+
+  font-weight: 700;
+
+  line-height: 1.05;
+
+  letter-spacing: -2.8px;
+}
+
+.programs-heading h2 span {
+  color: #ff5b08;
+}
+
+.programs-heading p {
+  width: 100%;
+  max-width: 540px;
+
+  margin: 28px auto 0;
+
+  color: #555555;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: 17px;
+
+  font-weight: 400;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   PROGRAM GRID
+========================================================= */
+
+.programs-grid {
+  width: 100%;
+  max-width: none;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+/* =========================================================
+   PROGRAM CARD
+========================================================= */
+
+.program-card {
+  position: relative;
+
+  width: 100%;
+  min-width: 0;
+
+  min-height: 275px;
+
+  padding: 30px 24px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 16px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.055);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(255, 91, 8, 0.3);
+
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.program-icon {
+  width: 58px;
+  height: 58px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 19px;
+
+  border-radius: 50%;
+
+  background: #fff1e9;
+
+  color: #ff5b08;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: 25px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.program-card:hover .program-icon {
+  background: #ff5b08;
+
+  color: #ffffff;
+
+  transform: scale(1.08);
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.program-card h3 {
+  margin: 0;
+
+  color: #111111;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.4px;
+}
+
+.program-card h3 span {
+  color: #ff5b08;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.program-card p {
+  width: 100%;
+  max-width: 220px;
+
+  margin: 12px auto 0;
+
+  color: #666666;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  line-height: 1.65;
+}
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.program-arrow {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: auto;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #fff1e9;
+
+  color: #ff5b08;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: 17px;
+
+  font-weight: 500;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.program-card:hover .program-arrow {
+  background: #ff5b08;
+
+  color: #ffffff;
+
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   FULL WIDTH STATISTICS
+========================================================= */
+
+.program-stats {
+  width: 100%;
+  max-width: none;
+
+  margin: 40px 0 0;
+  padding: 32px 60px;
+
+  min-height: 125px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  align-items: center;
+
+  gap: 0;
+
+  background: #ff5b08;
+
+  border: none;
+  border-radius: 0;
+
+  box-shadow: none;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   STAT ITEM
+========================================================= */
+
+.program-stat {
+  position: relative;
+
+  width: 100%;
+  min-width: 0;
+
+  min-height: 65px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 5px 20px;
+}
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.program-stat:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  top: 5%;
+  right: 0;
+
+  width: 1px;
+  height: 90%;
+
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.program-stat strong {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: clamp(32px, 3vw, 44px);
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: -1.5px;
+}
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.program-stat span {
+  margin-top: 9px;
+
+  color: rgba(255, 255, 255, 0.92);
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  line-height: 1.4;
+
+  letter-spacing: 0.2px;
+}
+
+/* =========================================================
+   1920px+
+========================================================= */
+
+@media (min-width: 1920px) {
+  .programs-section {
+    padding: 135px 0;
+  }
+
+  .programs-container {
+    width: 100%;
+    max-width: none;
+
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .programs-heading {
+    max-width: 720px;
+
+    margin-bottom: 65px;
+  }
+
+  .programs-label {
+    font-size: 14px;
+
+    margin-bottom: 22px;
+  }
+
+  .programs-heading h2 {
+    font-size: 72px;
+
+    letter-spacing: -3px;
+  }
+
+  .programs-heading p {
+    font-size: 18px;
+  }
+
+  .programs-grid {
+    gap: 22px;
+  }
+
+  .program-card {
+    min-height: 310px;
+
+    padding: 38px 30px;
+
+    border-radius: 18px;
+  }
+
+  .program-icon {
+    width: 66px;
+    height: 66px;
+
+    font-size: 28px;
+  }
+
+  .program-card h3 {
+    font-size: 22px;
+  }
+
+  .program-card p {
+    font-size: 14px;
+
+    max-width: 240px;
+  }
+
+  .program-stats {
+    min-height: 115px;
+
+    padding: 28px 40px;
+
+    border-radius: 18px;
+  }
+
+  .program-stat strong {
+    font-size: 38px;
+  }
+
+  .program-stat span {
+    font-size: 14px;
+  }
+}
+
+/* =========================================================
+   1600px - 1919px
+========================================================= */
+
+@media (min-width: 1600px) {
+  .program-stats {
+    min-height: 140px;
+
+    padding: 35px 70px;
+  }
+
+  .program-stat {
+    min-height: 75px;
+
+    padding: 5px 30px;
+  }
+
+  .program-stat strong {
+    font-size: 46px;
+  }
+
+  .program-stat span {
+    margin-top: 10px;
+
+    font-size: 14px;
+  }
+}
+
+/* =========================================================
+   1440px - 1599px
+========================================================= */
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .programs-container {
+    width: 100%;
+    max-width: none;
+
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .programs-grid {
+    gap: 18px;
+  }
+
+  .program-card {
+    min-height: 275px;
+  }
+
+  .program-stats {
+    min-height: 105px;
+  }
+}
+
+/* =========================================================
+   1200px - 1439px
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .programs-section {
+    padding: 90px 0;
+  }
+
+  .programs-container {
+    width: 100%;
+    max-width: none;
+
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .programs-heading {
+    margin-bottom: 48px;
+  }
+
+  .programs-heading h2 {
+    font-size: 52px;
+
+    letter-spacing: -2px;
+  }
+
+  .programs-heading p {
+    margin-top: 23px;
+
+    font-size: 15px;
+  }
+
+  .programs-grid {
+    gap: 15px;
+  }
+
+  .program-card {
+    min-height: 260px;
+
+    padding: 25px 18px;
+  }
+
+  .program-icon {
+    width: 52px;
+    height: 52px;
+
+    margin-bottom: 16px;
+
+    font-size: 22px;
+  }
+
+  .program-card h3 {
+    font-size: 18px;
+  }
+
+  .program-card p {
+    font-size: 12px;
+  }
+
+  .program-stats {
+    min-height: 95px;
+
+    padding: 22px 25px;
+  }
+
+  .program-stat strong {
+    font-size: 29px;
+  }
+
+  .program-stat span {
+    font-size: 12px;
+  }
+}
+
+/* =========================================================
+   1024px - 1199px
+========================================================= */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .programs-section {
+    padding: 80px 0;
+  }
+
+  .programs-container {
+    width: 100%;
+    max-width: none;
+
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .programs-heading {
+    margin-bottom: 42px;
+  }
+
+  .programs-heading h2 {
+    font-size: 46px;
+  }
+
+  .programs-heading p {
+    margin-top: 20px;
+
+    font-size: 14px;
+  }
+
+  .programs-grid {
+    gap: 15px;
+  }
+
+  .program-card {
+    min-height: 250px;
+
+    padding: 25px 18px;
+  }
+
+  .program-icon {
+    width: 52px;
+    height: 52px;
+
+    font-size: 22px;
+  }
+
+  .program-card h3 {
+    font-size: 18px;
+  }
+
+  .program-card p {
+    font-size: 11px;
+  }
+
+  .program-stats {
+    min-height: 90px;
+
+    padding: 20px;
+  }
+
+  .program-stat strong {
+    font-size: 27px;
+  }
+
+  .program-stat span {
+    font-size: 11px;
+  }
+}
+
+/* =========================================================
+   768px - 1023px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .programs-section {
+    padding: 75px 0;
+  }
+
+  .programs-container {
+    width: 100%;
+    max-width: none;
+
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .programs-heading {
+    max-width: 650px;
+
+    margin-bottom: 42px;
+  }
+
+  .programs-label {
+    font-size: 12px;
+  }
+
+  .programs-heading h2 {
+    font-size: 44px;
+
+    letter-spacing: -1.8px;
+  }
+
+  .programs-heading p {
+    margin-top: 20px;
+
+    font-size: 14px;
+  }
+
+  /* 2 Columns */
+
+  .programs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+  }
+
+  .program-card {
+    min-height: 255px;
+
+    padding: 27px 22px;
+  }
+
+  .program-icon {
+    width: 55px;
+    height: 55px;
+
+    font-size: 23px;
+  }
+
+  .program-card h3 {
+    font-size: 19px;
+  }
+
+  .program-card p {
+    font-size: 12px;
+  }
+
+  /* Stats */
+
+  .program-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    min-height: auto;
+
+    gap: 0;
+
+    padding: 20px 15px;
+  }
+
+  .program-stat {
+    min-height: 60px;
+
+    padding: 8px;
+  }
+
+  .program-stat strong {
+    font-size: 28px;
+  }
+
+  .program-stat span {
+    font-size: 12px;
+  }
+
+  .program-stat:nth-child(2)::after {
+    display: none;
+  }
+
+  .program-stat:nth-child(4)::after {
+    display: none;
+  }
+}
+
+/* =========================================================
+   576px - 767px
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .programs-section {
+    padding: 70px 0;
+  }
+
+  .programs-container {
+    width: 100%;
+    max-width: none;
+
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .programs-heading {
+    margin-bottom: 40px;
+  }
+
+  .programs-label {
+    font-size: 11px;
+
+    margin-bottom: 17px;
+  }
+
+  .programs-heading h2 {
+    font-size: 46px;
+
+    letter-spacing: -1.8px;
+  }
+
+  .programs-heading p {
+    margin-top: 20px;
+
+    font-size: 14px;
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .program-card {
+    min-height: 235px;
+
+    padding: 27px 22px;
+  }
+
+  .program-icon {
+    width: 55px;
+    height: 55px;
+
+    font-size: 23px;
+  }
+
+  .program-card h3 {
+    font-size: 19px;
+  }
+
+  .program-card p {
+    font-size: 12px;
+  }
+
+  .program-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    min-height: auto;
+
+    gap: 0;
+
+    padding: 20px 10px;
+  }
+
+  .program-stat {
+    min-height: 60px;
+
+    padding: 10px 5px;
+  }
+
+  .program-stat strong {
+    font-size: 25px;
+  }
+
+  .program-stat span {
+    font-size: 11px;
+  }
+
+  .program-stat:nth-child(2)::after {
+    display: none;
+  }
+
+  .program-stat:nth-child(4)::after {
+    display: none;
+  }
+}
+
+/* =========================================================
+   400px - 575px
+========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+  .programs-section {
+    padding: 60px 0;
+  }
+
+  .programs-container {
+    width: 100%;
+    max-width: none;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .programs-heading {
+    margin-bottom: 35px;
+  }
+
+  .programs-label {
+    font-size: 10px;
+
+    margin-bottom: 17px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .programs-heading h2 {
+    font-size: 40px;
+
+    letter-spacing: -1.4px;
+  }
+
+  .programs-heading p {
+    margin-top: 18px;
+
+    font-size: 13px;
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .program-card {
+    width: 100%;
+
+    min-height: 225px;
+
+    padding: 25px 20px;
+
+    border-radius: 12px;
+  }
+
+  .program-icon {
+    width: 52px;
+    height: 52px;
+
+    font-size: 21px;
+  }
+
+  .program-card h3 {
+    font-size: 18px;
+  }
+
+  .program-card p {
+    max-width: 270px;
+
+    font-size: 11.5px;
+  }
+
+  .program-stats {
+    width: 100%;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 0;
+
+    margin-top: 20px;
+
+    padding: 18px 8px;
+
+    border-radius: 13px;
+  }
+
+  .program-stat {
+    min-height: 56px;
+
+    padding: 8px 5px;
+  }
+
+  .program-stat strong {
+    font-size: 23px;
+  }
+
+  .program-stat span {
+    font-size: 10px;
+  }
+
+  .program-stat:nth-child(2)::after {
+    display: none;
+  }
+
+  .program-stat:nth-child(4)::after {
+    display: none;
+  }
+}
+
+/* =========================================================
+   350px - 399px
+========================================================= */
+
+@media (min-width: 350px) and (max-width: 399px) {
+  .programs-section {
+    padding: 52px 0;
+  }
+
+  .programs-container {
+    width: 100%;
+
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .programs-heading {
+    margin-bottom: 30px;
+  }
+
+  .programs-label {
+    font-size: 9px;
+
+    margin-bottom: 15px;
+  }
+
+  .programs-heading h2 {
+    font-size: 35px;
+
+    letter-spacing: -1px;
+  }
+
+  .programs-heading p {
+    margin-top: 17px;
+
+    font-size: 12px;
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr;
+
+    gap: 13px;
+  }
+
+  .program-card {
+    min-height: 215px;
+
+    padding: 23px 18px;
+
+    border-radius: 11px;
+  }
+
+  .program-icon {
+    width: 50px;
+    height: 50px;
+
+    font-size: 20px;
+  }
+
+  .program-card h3 {
+    font-size: 17px;
+  }
+
+  .program-card p {
+    max-width: 250px;
+
+    margin-top: 10px;
+
+    font-size: 11px;
+  }
+
+  .program-arrow {
+    width: 31px;
+    height: 31px;
+
+    font-size: 15px;
+  }
+
+  .program-stats {
+    margin-top: 19px;
+
+    padding: 16px 6px;
+
+    border-radius: 12px;
+  }
+
+  .program-stat {
+    min-height: 52px;
+  }
+
+  .program-stat strong {
+    font-size: 21px;
+  }
+
+  .program-stat span {
+    font-size: 9px;
+  }
+}
+
+/* =========================================================
+   BELOW 350px
+========================================================= */
+
+@media (max-width: 349px) {
+  .programs-section {
+    padding: 48px 0;
+  }
+
+  .programs-container {
+    width: 100%;
+    max-width: none;
+
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .programs-heading {
+    margin-bottom: 28px;
+  }
+
+  .programs-label {
+    font-size: 8px;
+
+    margin-bottom: 14px;
+
+    letter-spacing: 1.2px;
+  }
+
+  .programs-heading h2 {
+    font-size: 32px;
+
+    letter-spacing: -0.9px;
+  }
+
+  .programs-heading p {
+    margin-top: 16px;
+
+    font-size: 11.5px;
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .program-card {
+    width: 100%;
+
+    min-height: 205px;
+
+    padding: 21px 16px;
+
+    border-radius: 10px;
+  }
+
+  .program-icon {
+    width: 48px;
+    height: 48px;
+
+    font-size: 19px;
+  }
+
+  .program-card h3 {
+    font-size: 16px;
+  }
+
+  .program-card p {
+    max-width: 230px;
+
+    margin-top: 9px;
+
+    font-size: 10.5px;
+  }
+
+  .program-arrow {
+    width: 30px;
+    height: 30px;
+
+    font-size: 14px;
+  }
+
+  .program-stats {
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 14px 4px;
+
+    border-radius: 11px;
+  }
+
+  .program-stat {
+    min-height: 49px;
+
+    padding: 7px 3px;
+  }
+
+  .program-stat strong {
+    font-size: 20px;
+  }
+
+  .program-stat span {
+    font-size: 8.5px;
+  }
+}
+
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+@media (hover: none) and (pointer: coarse) {
+  .program-card:hover {
+    transform: none;
+
+    border-color: #eeeeee;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.055);
+  }
+
+  .program-card:hover .program-icon {
+    background: #fff1e9;
+
+    color: #ff5b08;
+
+    transform: none;
+  }
+
+  .program-card:hover .program-arrow {
+    background: #fff1e9;
+
+    color: #ff5b08;
+
+    transform: none;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .program-card,
+  .program-icon,
+  .program-arrow {
+    transition: none;
+  }
+
+  .program-card:hover {
+    transform: none;
+  }
+
+  .program-card:hover .program-icon {
+    transform: none;
+  }
+
+  .program-card:hover .program-arrow {
+    transform: none;
+  }
+}

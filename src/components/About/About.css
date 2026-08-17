@@ -1,0 +1,795 @@
+/* =========================================================
+   NKSports - ABOUT SECTION
+   Same Design System as Hero
+========================================================= */
+
+.about-section {
+  position: relative;
+  width: 100%;
+  min-height: 720px;
+
+  overflow: hidden;
+
+  background-color: #080808;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  color: #ffffff;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  isolation: isolate;
+}
+
+/* =========================================================
+   BACKGROUND OVERLAY
+========================================================= */
+
+.about-overlay {
+  position: relative;
+
+  width: 100%;
+  min-height: 720px;
+
+  display: flex;
+  align-items: center;
+}
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.about-container {
+  position: relative;
+
+  width: 100%;
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+  padding: 90px 60px;
+
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  align-items: center;
+
+  gap: 85px;
+}
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.about-content {
+  position: relative;
+
+  z-index: 5;
+
+  width: 100%;
+  max-width: 560px;
+}
+
+/* =========================================================
+   SMALL LABEL
+========================================================= */
+
+.about-label {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  color: #ff5b08;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.about-title {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(45px, 4.4vw, 68px);
+
+  font-weight: 700;
+
+  line-height: 1.05;
+
+  letter-spacing: -2.8px;
+}
+
+.about-title span {
+  color: #ff5b08;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.about-description {
+  max-width: 540px;
+
+  margin: 28px 0 0;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 17px;
+
+  font-weight: 400;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.about-features {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 13px;
+
+  margin-top: 27px;
+}
+
+.about-feature {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  line-height: 1.4;
+}
+
+/* =========================================================
+   CHECK ICON
+========================================================= */
+
+.about-check {
+  width: 21px;
+  height: 21px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1.5px solid rgba(255, 91, 8, 0.8);
+
+  border-radius: 50%;
+
+  color: #ff5b08;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+/* =========================================================
+   LEARN MORE BUTTON
+========================================================= */
+
+.about-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-width: 125px;
+  height: 47px;
+
+  margin-top: 30px;
+
+  padding: 0 25px;
+
+  border: none;
+
+  border-radius: 35px;
+
+  background: #ff5b08;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-button:hover {
+  background: #f45100;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 28px rgba(255, 91, 8, 0.25);
+}
+
+/* =========================================================
+   RIGHT IMAGE WRAPPER
+========================================================= */
+
+.about-image-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  z-index: 4;
+}
+
+/* =========================================================
+   IMAGE FRAME
+========================================================= */
+
+.about-image-frame {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 1.55 / 1;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background: #111111;
+
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.about-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition: transform 0.6s ease;
+}
+
+.about-image-frame:hover .about-image {
+  transform: scale(1.04);
+}
+
+/* =========================================================
+   IMAGE BORDER
+========================================================= */
+
+.about-image-frame::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: inherit;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   ORANGE ACCENT
+========================================================= */
+
+.about-image-wrapper::before {
+  content: "";
+
+  position: absolute;
+
+  width: 95px;
+  height: 95px;
+
+  right: -25px;
+  bottom: -25px;
+
+  background: #ff5b08;
+
+  border-radius: 50%;
+
+  opacity: 0.85;
+
+  filter: blur(35px);
+
+  z-index: -1;
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1600px) {
+  .about-section,
+  .about-overlay {
+    min-height: 780px;
+  }
+
+  .about-container {
+    max-width: 1550px;
+
+    padding: 100px 65px;
+
+    gap: 100px;
+  }
+
+  .about-content {
+    max-width: 580px;
+  }
+
+  .about-label {
+    font-size: 14px;
+
+    margin-bottom: 22px;
+  }
+
+  .about-title {
+    font-size: 70px;
+
+    letter-spacing: -3px;
+  }
+
+  .about-description {
+    font-size: 18px;
+
+    line-height: 1.7;
+  }
+
+  .about-feature {
+    font-size: 15px;
+  }
+
+  .about-button {
+    height: 52px;
+
+    min-width: 140px;
+
+    font-size: 15px;
+  }
+
+  .about-image-frame {
+    border-radius: 18px;
+  }
+}
+
+/* =========================================================
+   LAPTOP 1200px
+========================================================= */
+
+@media (max-width: 1200px) {
+  .about-container {
+    max-width: 1150px;
+
+    padding: 80px 45px;
+
+    gap: 55px;
+  }
+
+  .about-content {
+    max-width: 500px;
+  }
+
+  .about-title {
+    font-size: 52px;
+
+    letter-spacing: -2px;
+  }
+
+  .about-description {
+    margin-top: 23px;
+
+    font-size: 15px;
+  }
+
+  .about-feature {
+    font-size: 13px;
+  }
+
+  .about-button {
+    height: 45px;
+
+    margin-top: 26px;
+  }
+}
+
+/* =========================================================
+   TABLET 1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+  .about-section {
+    min-height: auto;
+  }
+
+  .about-overlay {
+    min-height: auto;
+  }
+
+  .about-container {
+    padding: 75px 35px;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-title {
+    font-size: 44px;
+
+    line-height: 1.08;
+
+    letter-spacing: -1.8px;
+  }
+
+  .about-description {
+    font-size: 14px;
+
+    line-height: 1.65;
+  }
+
+  .about-features {
+    margin-top: 22px;
+
+    gap: 10px;
+  }
+
+  .about-feature {
+    font-size: 12px;
+  }
+
+  .about-check {
+    width: 19px;
+    height: 19px;
+
+    font-size: 10px;
+  }
+
+  .about-button {
+    height: 44px;
+
+    padding: 0 22px;
+
+    margin-top: 24px;
+
+    font-size: 13px;
+  }
+
+  .about-image-frame {
+    border-radius: 14px;
+  }
+}
+
+/* =========================================================
+   TABLET / SMALL LAPTOP 900px
+========================================================= */
+
+@media (max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    padding: 75px 35px;
+  }
+
+  .about-content {
+    max-width: 650px;
+  }
+
+  .about-title {
+    font-size: clamp(44px, 7vw, 58px);
+  }
+
+  .about-description {
+    max-width: 620px;
+
+    font-size: 15px;
+  }
+
+  .about-image-wrapper {
+    width: 100%;
+
+    max-width: 720px;
+
+    margin: 0 auto;
+  }
+
+  .about-image-frame {
+    aspect-ratio: 1.6 / 1;
+  }
+}
+
+/* =========================================================
+   MOBILE 768px
+========================================================= */
+
+@media (max-width: 768px) {
+  .about-section {
+    background-position: center center;
+  }
+
+  .about-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(8, 8, 8, 0.96) 0%,
+      rgba(8, 8, 8, 0.94) 55%,
+      rgba(8, 8, 8, 0.91) 100%
+    );
+  }
+
+  .about-container {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 42px;
+
+    padding: 70px 25px;
+  }
+
+  .about-content {
+    width: 100%;
+
+    max-width: none;
+  }
+
+  .about-label {
+    margin-bottom: 17px;
+
+    font-size: 11px;
+
+    letter-spacing: 1.8px;
+  }
+
+  .about-title {
+    font-size: clamp(38px, 9vw, 52px);
+
+    line-height: 1.07;
+
+    letter-spacing: -1.8px;
+  }
+
+  .about-description {
+    margin-top: 20px;
+
+    max-width: 600px;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+  }
+
+  .about-features {
+    margin-top: 22px;
+
+    gap: 11px;
+  }
+
+  .about-feature {
+    font-size: 12px;
+  }
+
+  .about-button {
+    height: 45px;
+
+    min-width: 120px;
+
+    margin-top: 25px;
+
+    padding: 0 22px;
+
+    font-size: 13px;
+  }
+
+  .about-image-wrapper {
+    width: 100%;
+
+    max-width: none;
+  }
+
+  .about-image-frame {
+    width: 100%;
+
+    aspect-ratio: 1.35 / 1;
+
+    border-radius: 13px;
+  }
+}
+
+/* =========================================================
+   MOBILE 576px
+========================================================= */
+
+@media (max-width: 576px) {
+  .about-container {
+    padding: 60px 20px;
+
+    gap: 35px;
+  }
+
+  .about-label {
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .about-title {
+    font-size: clamp(36px, 10.5vw, 47px);
+
+    letter-spacing: -1.4px;
+  }
+
+  .about-description {
+    margin-top: 18px;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+  }
+
+  .about-features {
+    margin-top: 20px;
+
+    gap: 10px;
+  }
+
+  .about-feature {
+    font-size: 11px;
+
+    gap: 9px;
+  }
+
+  .about-check {
+    width: 18px;
+    height: 18px;
+
+    font-size: 9px;
+  }
+
+  .about-button {
+    height: 43px;
+
+    margin-top: 23px;
+
+    padding: 0 21px;
+
+    font-size: 12px;
+  }
+
+  .about-image-frame {
+    aspect-ratio: 1.2 / 1;
+
+    border-radius: 11px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE 400px
+========================================================= */
+
+@media (max-width: 400px) {
+  .about-container {
+    padding: 52px 17px;
+
+    gap: 30px;
+  }
+
+  .about-title {
+    font-size: 35px;
+
+    letter-spacing: -1px;
+  }
+
+  .about-description {
+    font-size: 12px;
+  }
+
+  .about-feature {
+    font-size: 10.5px;
+  }
+
+  .about-button {
+    height: 41px;
+
+    min-width: 110px;
+
+    font-size: 11px;
+  }
+
+  .about-image-frame {
+    aspect-ratio: 1.12 / 1;
+
+    border-radius: 10px;
+  }
+}
+
+/* =========================================================
+   VERY SMALL MOBILE 350px
+========================================================= */
+
+@media (max-width: 350px) {
+  .about-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .about-title {
+    font-size: 32px;
+  }
+
+  .about-description {
+    font-size: 11.5px;
+  }
+
+  .about-feature {
+    font-size: 10px;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .about-image,
+  .about-button {
+    transition: none;
+  }
+
+  .about-image-frame:hover .about-image {
+    transform: none;
+  }
+
+  .about-button:hover {
+    transform: none;
+  }
+}
