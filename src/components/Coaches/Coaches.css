@@ -523,7 +523,7 @@
 
 @media (min-width: 1600px) {
   .coaches-section {
-    padding: 0px 0 120px;
+    padding: 0px 0 0px;
   }
 
   .coaches-container {

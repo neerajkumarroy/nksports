@@ -325,7 +325,7 @@
 
 @media (min-width: 1920px) {
   .testimonials-section {
-    padding: 130px 0;
+    padding: 0px 0;
   }
 
   .testimonials-container {
@@ -395,7 +395,7 @@
 
 @media (min-width: 1600px) and (max-width: 1919px) {
   .testimonials-section {
-    padding: 120px 0;
+    padding: 0px 0;
   }
 
   .testimonials-container {
@@ -451,7 +451,7 @@
 
 @media (min-width: 1200px) and (max-width: 1439px) {
   .testimonials-section {
-    padding: 90px 0;
+    padding: 0px 0;
   }
 
   .testimonials-container {
@@ -527,7 +527,7 @@
 
 @media (min-width: 1024px) and (max-width: 1199px) {
   .testimonials-section {
-    padding: 80px 0;
+    padding: 0px 0;
   }
 
   .testimonials-container {
@@ -595,7 +595,7 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .testimonials-section {
-    padding: 75px 0;
+    padding: 0px 0;
   }
 
   .testimonials-container {
@@ -657,7 +657,7 @@
 
 @media (min-width: 576px) and (max-width: 767px) {
   .testimonials-section {
-    padding: 70px 0;
+    padding: 0px 0;
   }
 
   .testimonials-container {
@@ -730,7 +730,7 @@
 
 @media (min-width: 400px) and (max-width: 575px) {
   .testimonials-section {
-    padding: 60px 0;
+    padding: 0px 0;
   }
 
   .testimonials-container {
@@ -836,7 +836,7 @@
 
 @media (min-width: 350px) and (max-width: 399px) {
   .testimonials-section {
-    padding: 52px 0;
+    padding: 0px 0;
   }
 
   .testimonials-container {
@@ -932,7 +932,7 @@
 
 @media (max-width: 349px) {
   .testimonials-section {
-    padding: 48px 0;
+    padding: 0px 0;
   }
 
   .testimonials-container {
