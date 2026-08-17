@@ -610,7 +610,7 @@
   }
 
   .coaches-heading p {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .coaches-slider {
@@ -688,7 +688,7 @@
   }
 
   .coaches-heading p {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .coaches-slider {
@@ -747,7 +747,7 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .coaches-section {
-    padding: 75px 0 85px;
+    padding: 0px 0 85px;
   }
 
   .coaches-container {
@@ -760,7 +760,7 @@
   }
 
   .coaches-label {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .coaches-heading h2 {
@@ -770,7 +770,7 @@
   }
 
   .coaches-heading p {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   /*
@@ -847,7 +847,7 @@
 
 @media (min-width: 576px) and (max-width: 767px) {
   .coaches-section {
-    padding: 65px 0 75px;
+    padding: 0px 0 75px;
   }
 
   .coaches-container {
@@ -860,7 +860,7 @@
   }
 
   .coaches-label {
-    font-size: 10px;
+    font-size: 15px;
 
     letter-spacing: 1.7px;
   }
@@ -874,7 +874,7 @@
   .coaches-heading p {
     margin-top: 17px;
 
-    font-size: 12px;
+    font-size: 15px;
   }
 
   /*
@@ -965,7 +965,7 @@
 
 @media (min-width: 400px) and (max-width: 575px) {
   .coaches-section {
-    padding: 55px 0 65px;
+    padding: 0px 0 65px;
   }
 
   .coaches-container {
@@ -978,7 +978,7 @@
   }
 
   .coaches-label {
-    margin-bottom: 11px;
+    margin-bottom: 15px;
 
     font-size: 9px;
 
@@ -1120,7 +1120,7 @@
 
 @media (min-width: 350px) and (max-width: 399px) {
   .coaches-section {
-    padding: 50px 0 58px;
+    padding: 0px 0 58px;
   }
 
   .coaches-container {
@@ -1133,7 +1133,7 @@
   }
 
   .coaches-label {
-    font-size: 8px;
+    font-size: 15px;
 
     letter-spacing: 1.2px;
   }
@@ -1147,7 +1147,7 @@
   .coaches-heading p {
     margin-top: 13px;
 
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .coaches-slider {
@@ -1169,11 +1169,11 @@
   }
 
   .coach-info h3 {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .coach-info p {
-    font-size: 7.5px;
+    font-size: 10px;
   }
 
   .coach-slider-btn {
@@ -1224,7 +1224,7 @@
 
     margin-top: 8px;
 
-    font-size: 7.5px;
+    font-size: 12px;
   }
 
   .elevate-button {
@@ -1234,7 +1234,7 @@
 
     padding: 0 10px;
 
-    font-size: 7px;
+    font-size: 10px;
   }
 }
 
@@ -1244,7 +1244,7 @@
 
 @media (max-width: 349px) {
   .coaches-section {
-    padding: 45px 0 50px;
+    padding: 0px 0 50px;
   }
 
   .coaches-container {
@@ -1257,7 +1257,7 @@
   }
 
   .coaches-label {
-    font-size: 7px;
+    font-size: 15px;
 
     letter-spacing: 1px;
   }
@@ -1271,7 +1271,7 @@
   .coaches-heading p {
     margin-top: 12px;
 
-    font-size: 9px;
+    font-size: 15px;
   }
 
   .coaches-slider {

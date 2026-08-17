@@ -657,9 +657,9 @@
   }
 
   .about-label {
-    font-size: 10px;
-
+    font-size: 12px;
     letter-spacing: 1.5px;
+    margin-left: 107px;
   }
 
   .about-title {

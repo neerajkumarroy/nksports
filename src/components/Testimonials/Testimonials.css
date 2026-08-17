@@ -848,7 +848,7 @@
   }
 
   .testimonials-label {
-    font-size: 9px;
+    font-size: 15px;
 
     letter-spacing: 1.3px;
 
@@ -864,7 +864,7 @@
   .testimonials-heading p {
     margin-top: 15px;
 
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .testimonials-grid {
@@ -903,23 +903,23 @@
   }
 
   .testimonial-user h3 {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .testimonial-user span {
-    font-size: 9px;
+    font-size: 12px;
   }
 
   .testimonial-rating {
     margin-top: 15px;
 
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .testimonial-text {
     margin-top: 11px;
 
-    font-size: 10.5px;
+    font-size: 15px;
 
     line-height: 1.6;
   }

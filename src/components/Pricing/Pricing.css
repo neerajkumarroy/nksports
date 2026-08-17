@@ -15,13 +15,6 @@
   width: 100%;
   margin: 0;
   margin-bottom: 50px;
-  /* background:
-    radial-gradient(
-      circle at 10% 20%,
-      rgba(250, 108, 37, 0.055),
-      transparent 28%
-    ),
-    #ffffff; */
 
   color: #111111;
 
@@ -487,7 +480,7 @@
 
   color: #222222;
 
-  font-size: 11px;
+  font-size: 15px;
 
   font-weight: 600;
 
@@ -617,7 +610,7 @@
   }
 
   .pricing-feature {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
@@ -708,7 +701,7 @@
   }
 
   .pricing-feature {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
@@ -764,7 +757,7 @@
   }
 
   .pricing-feature {
-    font-size: 9.5px;
+    font-size: 13px;
   }
 }
 
@@ -898,7 +891,7 @@
   }
 
   .pricing-label {
-    font-size: 10px;
+    font-size: 15px;
 
     letter-spacing: 1.7px;
   }
@@ -912,7 +905,7 @@
   .pricing-heading p {
     margin-top: 17px;
 
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .pricing-grid {
@@ -946,7 +939,7 @@
   }
 
   .pricing-description {
-    font-size: 11px;
+    font-size: 15px;
 
     min-height: auto;
   }
@@ -966,7 +959,7 @@
   }
 
   .pricing-feature {
-    font-size: 10.5px;
+    font-size: 13px;
   }
 }
 
@@ -989,7 +982,7 @@
   }
 
   .pricing-label {
-    font-size: 9px;
+    font-size: 15px;
 
     letter-spacing: 1.3px;
   }
@@ -1001,7 +994,10 @@
   }
 
   .pricing-heading p {
-    font-size: 11px;
+    font-size: 15px;
+  }
+  .pricing-tag {
+    font-size: 12px;
   }
 
   .pricing-grid {
@@ -1021,7 +1017,7 @@
   }
 
   .pricing-description {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .pricing-price strong {
@@ -1035,7 +1031,7 @@
   }
 
   .pricing-feature {
-    font-size: 9.5px;
+    font-size: 13px;
   }
 }
 
@@ -1081,7 +1077,7 @@
   }
 
   .pricing-description {
-    font-size: 9.5px;
+    font-size: 15px;
   }
 
   .pricing-price strong {

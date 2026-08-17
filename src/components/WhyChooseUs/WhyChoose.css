@@ -1,12 +1,8 @@
 /* =========================================================
    NKSports - WHY CHOOSE SECTION
-   Same Theme as Programs / About
+   Fully Responsive
    Font: Poppins
-   Color: #ff5b08
-========================================================= */
-
-/* =========================================================
-   GLOBAL
+   Primary: #ff5b08
 ========================================================= */
 
 .why-section,
@@ -20,15 +16,10 @@
 
 .why-section {
   width: 100%;
-
   padding: 110px 0;
-
   background: #ffffff;
-
   color: #111111;
-
   font-family: "Poppins", Arial, sans-serif;
-
   overflow: hidden;
 }
 
@@ -38,20 +29,14 @@
 
 .why-container {
   width: 100%;
-
   max-width: 1500px;
-
   margin: 0 auto;
-
   padding: 0 60px;
 
   display: grid;
-
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-
   align-items: center;
-
-  gap: 90px;
+  gap: 80px;
 }
 
 /* =========================================================
@@ -60,7 +45,6 @@
 
 .why-content {
   width: 100%;
-
   max-width: 650px;
 }
 
@@ -76,15 +60,11 @@
   color: #ff5b08;
 
   font-family: "Poppins", Arial, sans-serif;
-
   font-size: 13px;
-
   font-weight: 600;
-
   line-height: 1;
 
   letter-spacing: 2px;
-
   text-transform: uppercase;
 }
 
@@ -98,13 +78,10 @@
   color: #111111;
 
   font-family: "Poppins", Arial, sans-serif;
-
   font-size: clamp(45px, 4.4vw, 68px);
-
   font-weight: 700;
 
   line-height: 1.05;
-
   letter-spacing: -2.8px;
 }
 
@@ -118,7 +95,6 @@
 
 .why-description {
   width: 100%;
-
   max-width: 600px;
 
   margin: 28px 0 38px;
@@ -126,9 +102,7 @@
   color: #555555;
 
   font-family: "Poppins", Arial, sans-serif;
-
   font-size: 17px;
-
   font-weight: 400;
 
   line-height: 1.7;
@@ -142,7 +116,6 @@
   width: 100%;
 
   display: flex;
-
   flex-direction: column;
 
   gap: 20px;
@@ -156,7 +129,6 @@
   width: 100%;
 
   display: flex;
-
   align-items: flex-start;
 
   gap: 17px;
@@ -176,15 +148,11 @@
 
 .why-icon {
   width: 40px;
-
   height: 40px;
-
   min-width: 40px;
 
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
   margin-top: 1px;
@@ -192,13 +160,11 @@
   border-radius: 50%;
 
   background: #fff1e9;
-
   color: #ff5b08;
 
   font-family: "Poppins", Arial, sans-serif;
 
   font-size: 17px;
-
   font-weight: 700;
 
   line-height: 1;
@@ -211,7 +177,6 @@
 
 .why-benefit:hover .why-icon {
   background: #ff5b08;
-
   color: #ffffff;
 
   transform: scale(1.08);
@@ -223,13 +188,8 @@
 
 .why-benefit-content {
   flex: 1;
-
   min-width: 0;
 }
-
-/* =========================================================
-   BENEFIT TITLE
-========================================================= */
 
 .why-benefit-content h3 {
   margin: 0;
@@ -239,21 +199,14 @@
   font-family: "Poppins", Arial, sans-serif;
 
   font-size: 17px;
-
   font-weight: 600;
 
   line-height: 1.35;
-
   letter-spacing: -0.2px;
 }
 
-/* =========================================================
-   BENEFIT DESCRIPTION
-========================================================= */
-
 .why-benefit-content p {
   width: 100%;
-
   max-width: 480px;
 
   margin: 5px 0 0;
@@ -263,7 +216,6 @@
   font-family: "Poppins", Arial, sans-serif;
 
   font-size: 12px;
-
   font-weight: 400;
 
   line-height: 1.55;
@@ -277,10 +229,10 @@
   width: 100%;
 
   display: flex;
-
   align-items: center;
-
   justify-content: flex-end;
+
+  min-width: 0;
 }
 
 /* =========================================================
@@ -291,7 +243,6 @@
   position: relative;
 
   width: 100%;
-
   max-width: 650px;
 
   aspect-ratio: 1 / 1;
@@ -311,13 +262,11 @@
 
 .why-image {
   width: 100%;
-
   height: 100%;
 
   display: block;
 
   object-fit: cover;
-
   object-position: center;
 
   transition: transform 0.6s ease;
@@ -328,97 +277,22 @@
 }
 
 /* =========================================================
-   EXTRA LARGE DESKTOP
-   1920px+
-========================================================= */
-
-@media (min-width: 1920px) {
-  .why-section {
-    padding: 0px 0;
-  }
-
-  .why-container {
-    max-width: 1650px;
-
-    padding: 0 70px;
-
-    gap: 110px;
-  }
-
-  .why-content {
-    max-width: 700px;
-  }
-
-  .why-label {
-    font-size: 14px;
-
-    margin-bottom: 22px;
-  }
-
-  .why-title {
-    font-size: 72px;
-
-    letter-spacing: -3px;
-  }
-
-  .why-description {
-    font-size: 18px;
-
-    margin-top: 30px;
-
-    margin-bottom: 42px;
-  }
-
-  .why-benefits {
-    gap: 23px;
-  }
-
-  .why-icon {
-    width: 44px;
-
-    height: 44px;
-
-    min-width: 44px;
-
-    font-size: 18px;
-  }
-
-  .why-benefit-content h3 {
-    font-size: 19px;
-  }
-
-  .why-benefit-content p {
-    font-size: 13px;
-  }
-
-  .why-image-card {
-    max-width: 700px;
-
-    border-radius: 26px;
-  }
-}
-
-/* =========================================================
    LARGE DESKTOP
-   1600px - 1919px
 ========================================================= */
 
-@media (min-width: 1600px) and (max-width: 1919px) {
+@media (min-width: 1600px) {
   .why-section {
-    padding: 1px 0;
+    padding: 100px 0;
   }
 
   .why-container {
     max-width: 1550px;
-
     padding: 0 65px;
-
     gap: 95px;
   }
 
   .why-title {
     font-size: 70px;
-
     letter-spacing: -3px;
   }
 
@@ -428,103 +302,43 @@
 
   .why-image-card {
     max-width: 670px;
-
     border-radius: 24px;
   }
 }
 
 /* =========================================================
    DESKTOP
-   1440px - 1599px
+   1200px - 1599px
 ========================================================= */
 
-@media (min-width: 1440px) and (max-width: 1599px) {
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .why-section {
+    padding: 90px 0;
+  }
+
   .why-container {
-    max-width: 1500px;
-
-    padding: 0 60px;
-
-    gap: 80px;
+    max-width: 1400px;
+    padding: 0 50px;
+    gap: 65px;
   }
 
   .why-title {
-    font-size: 64px;
+    font-size: 60px;
+    letter-spacing: -2.5px;
+  }
+
+  .why-description {
+    font-size: 16px;
   }
 
   .why-image-card {
-    max-width: 620px;
+    max-width: 600px;
+    border-radius: 21px;
   }
 }
 
 /* =========================================================
    LAPTOP
-   1200px - 1439px
-========================================================= */
-
-@media (min-width: 1200px) and (max-width: 1439px) {
-  .why-section {
-    padding: 1px 0;
-  }
-
-  .why-container {
-    max-width: 1200px;
-
-    padding: 0 40px;
-
-    gap: 55px;
-  }
-
-  .why-label {
-    font-size: 12px;
-
-    margin-bottom: 18px;
-  }
-
-  .why-title {
-    font-size: 52px;
-
-    letter-spacing: -2px;
-  }
-
-  .why-description {
-    margin-top: 23px;
-
-    margin-bottom: 32px;
-
-    font-size: 15px;
-  }
-
-  .why-benefits {
-    gap: 17px;
-  }
-
-  .why-icon {
-    width: 37px;
-
-    height: 37px;
-
-    min-width: 37px;
-
-    font-size: 15px;
-  }
-
-  .why-benefit-content h3 {
-    font-size: 16px;
-  }
-
-  .why-benefit-content p {
-    font-size: 11px;
-  }
-
-  .why-image-card {
-    max-width: 550px;
-
-    border-radius: 18px;
-  }
-}
-
-/* =========================================================
-   TABLET LANDSCAPE
    1024px - 1199px
 ========================================================= */
 
@@ -535,48 +349,40 @@
 
   .why-container {
     max-width: 1100px;
-
     padding: 0 35px;
-
     gap: 45px;
   }
 
   .why-label {
     font-size: 11px;
-
     margin-bottom: 17px;
   }
 
   .why-title {
     font-size: 46px;
-
     letter-spacing: -1.8px;
   }
 
   .why-description {
     margin-top: 20px;
-
     margin-bottom: 30px;
-
     font-size: 14px;
+    line-height: 1.65;
   }
 
   .why-benefits {
     gap: 15px;
   }
 
-  .why-icon {
-    width: 35px;
-
-    height: 35px;
-
-    min-width: 35px;
-
-    font-size: 14px;
-  }
-
   .why-benefit {
     gap: 13px;
+  }
+
+  .why-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    font-size: 14px;
   }
 
   .why-benefit-content h3 {
@@ -584,12 +390,11 @@
   }
 
   .why-benefit-content p {
-    font-size: 10px;
+    font-size: 10.5px;
   }
 
   .why-image-card {
     max-width: 500px;
-
     border-radius: 17px;
   }
 }
@@ -601,17 +406,97 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .why-section {
-    padding: 75px 0;
+    padding: 70px 0;
   }
 
   .why-container {
-    max-width: 900px;
-
+    max-width: 950px;
     padding: 0 30px;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 
     gap: 35px;
+  }
+
+  .why-label {
+    font-size: 10px;
+    margin-bottom: 15px;
+    letter-spacing: 1.6px;
+  }
+
+  .why-title {
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+  }
+
+  .why-description {
+    margin: 18px 0 28px;
+
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .why-benefits {
+    gap: 14px;
+  }
+
+  .why-benefit {
+    gap: 11px;
+  }
+
+  .why-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+
+    font-size: 13px;
+  }
+
+  .why-benefit-content h3 {
+    font-size: 14px;
+  }
+
+  .why-benefit-content p {
+    margin-top: 4px;
+
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .why-image-card {
+    width: 100%;
+    border-radius: 16px;
+  }
+}
+
+/* =========================================================
+   MOBILE GENERAL
+   576px - 767px
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .why-section {
+    padding: 65px 0;
+  }
+
+  .why-container {
+    width: 100%;
+    max-width: 650px;
+
+    padding: 0 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 45px;
+  }
+
+  .why-content {
+    width: 100%;
+    max-width: 100%;
+
+    text-align: center;
   }
 
   .why-label {
@@ -623,137 +508,67 @@
   }
 
   .why-title {
-    font-size: 42px;
+    font-size: clamp(40px, 7vw, 48px);
 
     line-height: 1.08;
-
-    letter-spacing: -1.6px;
-  }
-
-  .why-description {
-    margin-top: 19px;
-
-    margin-bottom: 28px;
-
-    font-size: 13px;
-
-    line-height: 1.65;
-  }
-
-  .why-benefits {
-    gap: 14px;
-  }
-
-  .why-benefit {
-    gap: 12px;
-  }
-
-  .why-icon {
-    width: 34px;
-
-    height: 34px;
-
-    min-width: 34px;
-
-    font-size: 14px;
-  }
-
-  .why-benefit-content h3 {
-    font-size: 14px;
-  }
-
-  .why-benefit-content p {
-    margin-top: 4px;
-
-    font-size: 10px;
-  }
-
-  .why-image-card {
-    border-radius: 16px;
-  }
-}
-
-/* =========================================================
-   LARGE MOBILE
-   576px - 767px
-========================================================= */
-
-@media (min-width: 576px) and (max-width: 767px) {
-  .why-section {
-    padding: 30px 0;
-  }
-
-  .why-container {
-    max-width: 650px;
-
-    padding: 0 25px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 45px;
-  }
-
-  .why-content {
-    max-width: 100%;
-
-    text-align: center;
-  }
-
-  .why-label {
-    margin-bottom: 17px;
-
-    font-size: 11px;
-  }
-
-  .why-title {
-    font-size: 46px;
-
-    line-height: 1.07;
 
     letter-spacing: -1.8px;
   }
 
   .why-description {
+    width: 100%;
     max-width: 560px;
 
-    margin: 20px auto 35px;
+    margin: 20px auto 34px;
 
     font-size: 14px;
+
+    line-height: 1.65;
   }
 
   .why-benefits {
-    max-width: 520px;
+    width: 100%;
+    max-width: 540px;
 
     margin: 0 auto;
 
     text-align: left;
 
-    gap: 17px;
+    gap: 18px;
+  }
+
+  .why-benefit {
+    gap: 13px;
   }
 
   .why-icon {
     width: 38px;
-
     height: 38px;
-
     min-width: 38px;
+
+    font-size: 15px;
   }
 
   .why-benefit-content h3 {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .why-benefit-content p {
+    max-width: 100%;
+
     font-size: 11px;
+
+    line-height: 1.55;
   }
 
   .why-image-wrapper {
+    width: 100%;
+
     justify-content: center;
   }
 
   .why-image-card {
+    width: 100%;
     max-width: 100%;
 
     border-radius: 18px;
@@ -767,22 +582,23 @@
 
 @media (min-width: 400px) and (max-width: 575px) {
   .why-section {
-    padding: 20px 0;
+    padding: 55px 0;
   }
 
   .why-container {
+    width: 100%;
     max-width: 100%;
 
     padding: 0 20px;
 
     display: flex;
-
     flex-direction: column;
 
-    gap: 35px;
+    gap: 38px;
   }
 
   .why-content {
+    width: 100%;
     max-width: 100%;
 
     text-align: center;
@@ -791,20 +607,22 @@
   .why-label {
     font-size: 10px;
 
-    margin-bottom: 16px;
+    margin-bottom: 15px;
 
     letter-spacing: 1.5px;
   }
 
   .why-title {
-    font-size: 40px;
+    font-size: clamp(34px, 10vw, 42px);
 
-    line-height: 1.07;
+    line-height: 1.08;
 
     letter-spacing: -1.4px;
   }
 
   .why-description {
+    width: 100%;
+
     margin: 18px auto 30px;
 
     font-size: 13px;
@@ -813,30 +631,43 @@
   }
 
   .why-benefits {
-    gap: 16px;
+    width: 100%;
+
+    gap: 17px;
 
     text-align: left;
   }
 
   .why-benefit {
+    width: 100%;
+
     gap: 12px;
+
+    align-items: flex-start;
   }
 
   .why-icon {
     width: 35px;
-
     height: 35px;
-
     min-width: 35px;
 
     font-size: 14px;
   }
 
+  .why-benefit-content {
+    min-width: 0;
+  }
+
   .why-benefit-content h3 {
     font-size: 14px;
+
+    line-height: 1.4;
   }
 
   .why-benefit-content p {
+    width: 100%;
+    max-width: 100%;
+
     margin-top: 4px;
 
     font-size: 10.5px;
@@ -845,15 +676,18 @@
   }
 
   .why-image-wrapper {
+    width: 100%;
+
     justify-content: center;
   }
 
   .why-image-card {
     width: 100%;
-
     max-width: 100%;
 
-    border-radius: 15px;
+    aspect-ratio: 1 / 1;
+
+    border-radius: 16px;
   }
 }
 
@@ -864,41 +698,58 @@
 
 @media (min-width: 350px) and (max-width: 399px) {
   .why-section {
-    padding: 52px 0;
+    padding: 0px 0;
   }
 
   .why-container {
+    width: 100%;
+
     padding: 0 17px;
 
-    gap: 30px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 32px;
+  }
+
+  .why-content {
+    width: 100%;
+
+    text-align: center;
   }
 
   .why-label {
-    font-size: 9px;
+    font-size: 15px;
 
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 
-    letter-spacing: 1.4px;
+    letter-spacing: 1.3px;
   }
 
   .why-title {
-    font-size: 35px;
+    font-size: 34px;
 
     line-height: 1.08;
 
-    letter-spacing: -1px;
+    letter-spacing: -1.1px;
   }
 
   .why-description {
+    width: 100%;
+
     margin: 17px auto 27px;
 
-    font-size: 12px;
+    font-size: 15px;
 
     line-height: 1.6;
   }
 
   .why-benefits {
-    gap: 14px;
+    width: 100%;
+
+    gap: 15px;
+
+    text-align: left;
   }
 
   .why-benefit {
@@ -907,37 +758,44 @@
 
   .why-icon {
     width: 32px;
-
     height: 32px;
-
     min-width: 32px;
 
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .why-benefit-content h3 {
-    font-size: 13px;
+    font-size: 15px;
+
+    line-height: 1.4;
   }
 
   .why-benefit-content p {
-    font-size: 9.5px;
+    width: 100%;
+    max-width: 100%;
+
+    margin-top: 3px;
+
+    font-size: 13px;
 
     line-height: 1.5;
   }
 
   .why-image-card {
-    border-radius: 13px;
+    width: 100%;
+
+    border-radius: 14px;
   }
 }
 
 /* =========================================================
    VERY SMALL MOBILE
-   BELOW 350px
+   320px - 349px
 ========================================================= */
 
-@media (max-width: 349px) {
+@media (min-width: 320px) and (max-width: 349px) {
   .why-section {
-    padding: 48px 0;
+    padding: 0px 0;
   }
 
   .why-container {
@@ -945,27 +803,38 @@
 
     padding: 0 14px;
 
-    gap: 27px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 28px;
+  }
+
+  .why-content {
+    width: 100%;
+
+    text-align: center;
   }
 
   .why-label {
-    font-size: 8px;
+    font-size: 15px;
 
-    margin-bottom: 14px;
+    margin-bottom: 13px;
 
-    letter-spacing: 1.2px;
+    letter-spacing: 1.1px;
   }
 
   .why-title {
-    font-size: 32px;
+    font-size: 30px;
 
-    line-height: 1.08;
+    line-height: 1.1;
 
-    letter-spacing: -0.9px;
+    letter-spacing: -0.8px;
   }
 
   .why-description {
-    margin: 16px auto 25px;
+    width: 100%;
+
+    margin: 15px auto 24px;
 
     font-size: 11.5px;
 
@@ -973,37 +842,127 @@
   }
 
   .why-benefits {
+    width: 100%;
+
     gap: 13px;
+
+    text-align: left;
   }
 
   .why-benefit {
+    width: 100%;
+
     gap: 9px;
   }
 
   .why-icon {
-    width: 30px;
+    width: 29px;
+    height: 29px;
+    min-width: 29px;
 
-    height: 30px;
-
-    min-width: 30px;
-
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .why-benefit-content h3 {
     font-size: 12px;
+
+    line-height: 1.4;
   }
 
   .why-benefit-content p {
+    width: 100%;
+    max-width: 100%;
+
     margin-top: 3px;
 
     font-size: 9px;
+
+    line-height: 1.5;
+  }
+
+  .why-image-card {
+    width: 100%;
+
+    border-radius: 12px;
+  }
+}
+
+/* =========================================================
+   EXTRA SMALL DEVICES
+   BELOW 320px
+========================================================= */
+
+@media (max-width: 319px) {
+  .why-section {
+    padding: 0px 0;
+  }
+
+  .why-container {
+    width: 100%;
+    padding: 0 12px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+  }
+
+  .why-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .why-label {
+    font-size: 15px;
+    margin-bottom: 12px;
+
+    letter-spacing: 1px;
+  }
+
+  .why-title {
+    font-size: 27px;
+
+    line-height: 1.1;
+
+    letter-spacing: -0.6px;
+  }
+
+  .why-description {
+    margin: 14px auto 22px;
+
+    font-size: 10.5px;
+
+    line-height: 1.55;
+  }
+
+  .why-benefits {
+    gap: 12px;
+  }
+
+  .why-benefit {
+    gap: 8px;
+  }
+
+  .why-icon {
+    width: 27px;
+    height: 27px;
+    min-width: 27px;
+
+    font-size: 10px;
+  }
+
+  .why-benefit-content h3 {
+    font-size: 11px;
+  }
+
+  .why-benefit-content p {
+    font-size: 8.5px;
 
     line-height: 1.45;
   }
 
   .why-image-card {
-    border-radius: 11px;
+    border-radius: 10px;
   }
 }
 
@@ -1018,9 +977,7 @@
 
   .why-benefit:hover .why-icon {
     background: #fff1e9;
-
     color: #ff5b08;
-
     transform: none;
   }
 
@@ -1051,4 +1008,28 @@
   .why-image-card:hover .why-image {
     transform: none;
   }
+}
+
+/* =========================================================
+   SAFETY: PREVENT HORIZONTAL OVERFLOW
+========================================================= */
+
+.why-section {
+  max-width: 100%;
+}
+
+.why-container,
+.why-content,
+.why-benefits,
+.why-benefit,
+.why-image-wrapper,
+.why-image-card {
+  min-width: 0;
+}
+
+.why-title,
+.why-description,
+.why-benefit-content h3,
+.why-benefit-content p {
+  overflow-wrap: break-word;
 }

@@ -941,7 +941,7 @@
   }
 
   .programs-label {
-    font-size: 10px;
+    font-size: 15px;
 
     margin-bottom: 17px;
 
@@ -957,7 +957,7 @@
   .programs-heading p {
     margin-top: 18px;
 
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .programs-grid {
@@ -1051,8 +1051,7 @@
   }
 
   .programs-label {
-    font-size: 9px;
-
+    font-size: 15px;
     margin-bottom: 15px;
   }
 
@@ -1065,7 +1064,7 @@
   .programs-heading p {
     margin-top: 17px;
 
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .programs-grid {
@@ -1098,7 +1097,7 @@
 
     margin-top: 10px;
 
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .program-arrow {
@@ -1125,7 +1124,7 @@
   }
 
   .program-stat span {
-    font-size: 9px;
+    font-size: 13px;
   }
 }
 
